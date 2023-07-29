@@ -1,0 +1,17 @@
+{
+  "name": "tateeda-web-site-test",
+  "version": "1.0.0",
+  "description": "tateeda wordpress automated tests via cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Hasmik Mkhitaryan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  },
+  "dependencies": {
+    "casual-browserify": "^1.5.19-2"
+  }
+}
