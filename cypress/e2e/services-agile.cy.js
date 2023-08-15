@@ -1,14 +1,14 @@
 import { mainElements } from '../support/page-objects/mainElements.js';
 
-describe('test all redirections to contacts page from agile page', () => {
+describe('test all navigation links to "Contacts" page', () => {
 
-    it('should verify Get A QUOTE button redirects to contact us page', () => {
+    it('should verify "Get A Quote" button redirects to "Contacts" page', () => {
         cy.visit('/agile');
         mainElements.getAQuoteButton.click();
         cy.url().should('be.equal', 'https://tateeda.com/contacts');
     });
 
-    it('should verify REQUEST A QUOTE button redirects to contact us page', () => {
+    it('should verify "Request a quote" button redirects to "Contacts" page', () => {
         cy.visit('/agile');
         mainElements.requestAQuoteButton.click();
         cy.url().should('be.equal', 'https://tateeda.com/contacts');

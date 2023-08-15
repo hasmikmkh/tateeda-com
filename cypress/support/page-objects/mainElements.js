@@ -3,7 +3,6 @@ export class mainElements {
         return cy.get('li.menu-item-object-page > a.nav-link').eq(0);
     }
     static get contactUsButton() {
-        //return cy.contains('a', 'contact us');
         return cy.get('div.btn-group > a[href="/contacts"]').eq(1);
     }
 
@@ -11,23 +10,23 @@ export class mainElements {
         return cy.contains('a', 'Book a free chat');
     }
 
-    static get teleBookAFreeChatButton() {
+    static get bookAFreeChatButtonFromWhatWeOfferSection() {
         return cy.get('.what-we-offer-section a');
     }
 
-    static get emrBookAFreeChatButton() {
+    static get bookFreeChatButtonFromSolutions() {
         return cy.get('.technologies-section a');
     }
 
-    static get emrBookAFreeChatBtn() {
+    static get bookAFreeChatButtonFromClients() {
         return cy.get('.clients-slider .button-wrapper a');
     }
 
-    static get hospitalBookAFreeChatButton() {
+    static get bookAFreeChatButtonFromFunctionSection() {
         return cy.contains('.button-wrapper', 'a', 'Book a free chat');
     }
 
-    static get medBookAFreeChatButton() {
+    static get bookAFreeChatButtonFromServicesSection() {
         return cy.get('.what-we-offer-section a');
     }
 
@@ -35,11 +34,10 @@ export class mainElements {
         return cy.get('.hero-services a');
     }
     
-    static get testBookAFreeChatButton() {
+    static get bookAFreeChatButtonFromOurServicesSection() {
         return cy.get('.content-testing-left-side a');
     }
     static get letsChatButton() {
-        //return cy.contains('h3', 'chat');
         return cy.get('.card-text > .btn');
     }
 
@@ -115,7 +113,7 @@ export class mainElements {
         return cy.get('.healthcare-send-form input[name="your-contact"]');
     }
 
-    static get getBackToMebutton() {
+    static get getBackToMeButton() {
         return cy.get('.healthcare-send-form input[value="Get Back to Me!"]');
     }
 

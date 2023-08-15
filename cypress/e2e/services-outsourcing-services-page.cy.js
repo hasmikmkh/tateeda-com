@@ -2,19 +2,19 @@ import { mainElements } from '../support/page-objects/mainElements.js';
 
 describe('test all redirections to contacts page from  outsourcing services page', () => {
 
-    it('should verify Book a free chat button redirects to contact us page from HomePage', () => {
+    it('should verify "Book a free chat" button redirects to "Contacts" page', () => {
         cy.visit('/outsourcing-services');
         mainElements.bookAFreeChatButton.click();
         cy.url().should('be.equal', 'https://tateeda.com/contacts');
     });
 
-    it('should verify Book a free chant with us button redirects to contact us page from HomePage', () => {
+    it('should verify "Book a free chat" button redirects to "Contacts" page from HomePage', () => {
         cy.visit('/outsourcing-services');
-        mainElements.hospitalBookAFreeChatButton.click();
+        mainElements.bookAFreeChatButtonFromFunctionSection.click();
         cy.url().should('be.equal', 'https://tateeda.com/contacts');
     });
 
-    it('should verify lets chat button redirects to contact us page from HomePage', () => {
+    it('should verify "Lets chat" button redirects to "Contacts" page', () => {
         cy.visit('/outsourcing-services');
         mainElements.letsChatButton.click();
         cy.url().should('be.equal', 'https://tateeda.com/contacts');
