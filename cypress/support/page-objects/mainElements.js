@@ -1,4 +1,4 @@
-export class mainElements {
+export class MainElements {
     static get contactUsHeaderButton() {
         return cy.get('li.menu-item-object-page > a.nav-link').eq(0);
     }
@@ -119,5 +119,9 @@ export class mainElements {
 
     static get bookAFreeChatLink() {
         cy.get('div[role="group"] > a.btn-arrow > span')
+    }
+
+    static get successMessage(){
+        return cy.contains('.alert-success','Thank you! Our representative will get in touch with you shortly.');
     }
 }
